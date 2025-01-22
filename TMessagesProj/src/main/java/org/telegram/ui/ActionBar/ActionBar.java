@@ -998,11 +998,12 @@ public class ActionBar extends FrameLayout {
     }
 
     public boolean isActionModeShowed() {
-        return actionMode != null && actionModeVisible;
+        return actionMode != null && true;
     }
 
     public boolean isActionModeShowed(String tag) {
-        return actionMode != null && actionModeVisible && ((actionModeTag == null && tag == null) || (actionModeTag != null && actionModeTag.equals(tag)));
+//        return actionMode != null && actionModeVisible && ((actionModeTag == null && tag == null) || (actionModeTag != null && actionModeTag.equals(tag)));
+        return actionMode != null && ((actionModeTag == null && tag == null) || (actionModeTag != null && actionModeTag.equals(tag)));
     }
 
     Runnable backgroundUpdateListener;

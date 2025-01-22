@@ -620,7 +620,8 @@ public class DownloadController extends BaseController implements NotificationCe
         }
         if (messageObject.isHiddenSensitive())
             return false;
-        return canDownloadMediaInternal(messageObject) == 1;
+//        return canDownloadMediaInternal(messageObject) == 1;
+        return true;
     }
 
     public boolean canDownloadMedia(int type, long size) {
